@@ -1,0 +1,24 @@
+{
+    "1": {
+      "city": "Niksic",
+      "country": "Montenegro",
+      "address": "Njegoseva ulica bb.",
+      "postal_code": "81402",
+      "name" : "VOLI"
+    },
+    "2": {
+      "city": "Niksic",
+      "country": "Montenegro",
+      "address": "Niksic bb",
+      "postal_code": "81403",
+      "name" : "LAKOVIC"
+    },
+    "3": {
+      "city": "Podgorica",
+      "country": "Montenegro",
+      "address": "Ulica slobode 1",
+      "postal_code": "81000",
+      "name": "IDEA"
+    }
+  }
+  

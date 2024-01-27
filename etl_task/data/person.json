@@ -1,0 +1,26 @@
+{
+    "1": {
+      "first_name": "Matija",
+      "last_name": "Milovic",
+      "unique_identification_number": "1111111111111",
+      "email": "matijamilovic999@gmail.com",
+      "phone_number": "+38267707222",
+      "risk_group_id" : "a"
+    },
+    "2": {
+        "first_name": "Igor",
+        "last_name": "Ivanovic",
+        "unique_identification_number": "2222222222222",
+        "email": "iivanovic12@gmail.com",
+        "phone_number": "+38268107221",
+        "risk_group_id" : "b"
+    },
+    "3": {
+      "first_name": "Petar",
+      "last_name": "Jokovic",
+      "unique_identification_number": "3333333333333",
+      "email": "pjokovic@gmail.com",
+      "phone_number": "+382691212009",
+      "risk_group_id" : "a"
+  }
+}

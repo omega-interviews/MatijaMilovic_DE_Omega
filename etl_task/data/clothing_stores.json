@@ -1,0 +1,31 @@
+{
+    "1": {
+      "city": "Niksic",
+      "country": "Montenegro",
+      "address": "Njegoseva ulica bb.",
+      "postal_code": "81402",
+      "name" : "ZARA"
+    },
+    "2": {
+      "city": "Niksic",
+      "country": "Montenegro",
+      "address": "Niksic bb",
+      "postal_code": "81403",
+      "name" : "SUPERDRY"
+    },
+    "3": {
+      "city": "Podgorica",
+      "country": "Montenegro",
+      "address": "Ulica slobode 1",
+      "postal_code": "81000",
+      "name": "PULL & BEAR"
+    },
+    "4": {
+      "city": "Podgorica",
+      "country": "Montenegro",
+      "address": "Moskovska ulica 32",
+      "postal_code": "81103",
+      "name": "FASNION & FRIENDS"
+    }
+  }
+  

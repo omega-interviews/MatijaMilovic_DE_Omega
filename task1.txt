@@ -1,0 +1,84 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: development
+-- ------------------------------------------------------
+-- Server version	8.3.0
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `transactions`
+--
+
+DROP TABLE IF EXISTS `transactions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `transactions` (
+  `user_id` varchar(45) NOT NULL,
+  `transaction_id` varchar(45) NOT NULL,
+  `transaction_category` varchar(45) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `membership` varchar(45) NOT NULL,
+  `is_processed` varchar(45) NOT NULL,
+  `is_successful` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`user_id`,`transaction_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `transactions`
+--
+
+LOCK TABLES `transactions` WRITE;
+/*!40000 ALTER TABLE `transactions` DISABLE KEYS */;
+INSERT INTO `transactions` VALUES ('bs502','r471v','debit_card','2022-07-11 12:43:45','free','no',NULL),('bs502','t111t','debit_card','2021-05-22 11:38:56','premium','yes','no'),('bs502','t112t','debit_card','2021-03-12 12:48:16','premium','yes','no'),('bs502','t113t','debit_card','2024-01-12 12:48:16','premium','yes','no'),('bs502','t114t','debit_card','2024-02-11 11:38:56','premium','yes','no'),('bs502','t115t','debit_card','2024-02-13 12:38:06','premium','yes','no'),('bs502','t116t','debit_card','2024-02-17 15:08:16','premium','yes','no'),('ce230','y108d','credit_card','2021-05-09 15:05:43','free','no',NULL),('ce230','y109d','debit_card','2021-06-17 15:08:16','premium','yes','yes'),('ce230','y110d','debit_card','2021-06-13 12:38:06','premium','yes','yes'),('ce230','y111d','saving_card','2021-06-19 15:08:16','premium','yes','yes'),('ce230','y112d','debit_card','2021-06-20 12:38:06','premium','yes','yes'),('ce230','y113d','saving_card','2021-06-21 15:08:16','premium','yes','no'),('fd612','e291e','credit_card','2022-01-25 17:55:45','premium','yes','yes'),('ne592','p351b','credit_card','2022-05-05 17:55:45','premium','yes','no'),('pw771','k238l','credit_card','2022-12-15 07:10:59','premium','no',NULL),('pw771','k239l','saving_card','2021-06-20 12:38:06','premium','yes','yes'),('pw771','k240l','saving_card','2021-06-21 15:08:16','premium','yes','yes'),('pw771','k242l','saving_card','2023-05-11 12:38:06','premium','yes','yes'),('pw771','k243l','saving_card','2023-05-12 15:08:16','premium','yes','yes'),('pw771','k244l','saving_card','2023-05-13 12:38:06','premium','yes','yes'),('pw771','k245l','saving_card','2023-05-14 15:08:16','premium','yes','yes'),('ro100','t095c','saving_card','2021-09-01 01:14:45','free','yes','yes'),('ro100','t194s','saving_card','2023-10-22 21:31:19','premium','yes','yes'),('ro100','t924q','saving_card','2020-05-12 11:38:56','premium','yes','yes'),('ro100','ts941','saving_card','2021-11-22 21:31:19','premium','yes','yes'),('to389','h320k','debit_card','2023-01-05 03:11:03','premium','yes','yes'),('to389','h321k','debit_card','2023-05-13 12:38:06','premium','yes','yes'),('to389','h322k','debit_card','2023-05-14 15:08:16','premium','yes','yes'),('to389','h323k','debit_card','2023-05-15 12:38:06','premium','yes','no'),('to389','h324k','credit_card','2023-05-16 15:08:16','premium','yes','yes'),('to389','h325k','credit_card','2023-05-17 12:38:06','premium','yes','yes'),('to389','h326k','credit_card','2023-05-18 15:08:16','premium','yes','yes'),('to389','h327k','credit_card','2023-05-19 12:38:06','premium','yes','yes'),('to389','h328k','credit_card','2023-05-20 15:08:16','premium','yes','yes'),('to389','h329k','credit_card','2023-05-21 12:38:06','premium','yes','no'),('to389','m159d','debit_card','2022-04-16 19:34:39','premium','yes','no'),('to389','t111t','debit_card','2021-05-22 11:38:56','premium','yes','yes'),('to389','t112t','debit_card','2021-03-12 12:48:16','premium','yes','no'),('to389','t194t','credit_card','2022-10-22 21:31:19','free','yes','yes');
+/*!40000 ALTER TABLE `transactions` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-01-27 15:45:46
+
+
+
+
+--query 1
+
+SELECT user_id, count(*) as number_of_trans from development.transactions
+WHERE YEAR(created_at) = 2022 AND membership = 'free'
+GROUP BY user_id;
+
+
+-- query 2
+
+WITH lagged AS 	(
+					SELECT *, LAG(is_successful, 1) OVER (PARTITION BY user_id, transaction_category ORDER BY created_at) AS was_successful_before FROM development.transactions
+                ),
+	status_change AS	(
+							SELECT *, CASE WHEN COALESCE(is_successful, 'no') <> COALESCE(was_successful_before, 'no') THEN 1 ELSE 0 END AS status_changed FROM lagged
+						),
+	streak_identified AS 	(
+								SELECT *, sum(status_changed) OVER (PARTITION BY user_id, transaction_category ORDER BY created_at) AS streak_identifier
+                                FROM status_change
+							),
+	record_counts AS	(
+						SELECT *, ROW_NUMBER() OVER (PARTITION BY user_id, transaction_category, streak_identifier ORDER BY created_at) AS streak_length FROM streak_identified
+                        )
+SELECT DISTINCT user_id FROM record_counts
+WHERE is_successful = 'yes' AND streak_length > 3;
