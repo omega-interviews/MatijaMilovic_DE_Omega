@@ -1,0 +1,10 @@
+{
+    "1": {
+        "user_id" : 3,
+        "discount_percentage" : 20        
+    },
+    "2": {
+        "user_id" : 2,
+        "discount_percentage" : 10        
+    }
+}
